@@ -76,30 +76,24 @@ Standardized script for generating regime predictions.
 *   **Logic:** Loads `mars_golden_model.pkl`, executes the pipeline via `data_engine.py`, and maps HMM states to human-readable names.
 *   **Safety:** Hardcoded to use the `Locked Feature Set`.
 
-### 2. Model Inspector (`inspect_model.py`)
-Utility to verify the internal structure and metadata of the Golden Model.
-
 ## System Context & Performance (as of Jan 2026)
-*   **Current Status:** **Bull/Expansion (State 2)** as of 2026-01-16.
-*   **Feed Health:** Smallcap feed successfully spliced using HDFC ETF (Factor: ~305.1). Stale feed issues from BSE-SMLCAP.BO have been mitigated.
-*   **Strategy:** HMM with Inertia Latch (20% Retention) & 0.05% slippage/leg.
-*   **Performance (10-Year Stress Test: 2015-2026):**
-    *   **Total Return:** **322.75%** (vs Nifty 206.05%) - Outperformance: +116.7%
-    *   **Sharpe Ratio:** 0.86 (vs Nifty 0.70)
-    *   **Max Drawdown:** -48.40% (vs Nifty -38.44%)
-    *   **Alpha Driver:** Smallcap exposure during Bull regimes.
-    *   **Stability:** The **Inertia Latch** reduced churn and matched the raw HMM's risk-adjusted return (Sharpe 0.86) while dampening turnover.
-*   **Performance (Post-Covid: 2020-2026):**
-    *   **Total Return:** 202.91% (vs Nifty 109.20%)
-    *   **Sharpe Ratio:** 1.08 (vs Nifty 0.76)
-    *   **Conclusion:** The strategy has become significantly more robust in the post-2020 regime.
 
+* **Current Status:** Bull/Expansion (State 2) as of 2026-01-16.
+* **Feed Health:** Smallcap feed successfully spliced using HDFC ETF (Factor: ~305.1). Stale feed issues from BSE-SMLCAP.BO have been mitigated.
+* **Strategy:** HMM with Inertia Latch (20% Retention) & 0.05% slippage/leg.
+* **Performance (10-Year Stress Test: 2015-2026):**
+    * **Total Return:** 299.04% (vs Nifty 188.62%) - Outperformance: +110.42%
+    * **Sharpe Ratio:** 0.81 (vs Nifty 0.65)
+    * **Max Drawdown:** -48.40% (vs Nifty -38.44%)
+    * **Alpha Driver:** Smallcap exposure during Bull regimes.
+    * **Stability:** The Inertia Latch reduced churn and matched the raw HMM's risk-adjusted return (Sharpe 0.81) while significantly dampening drawdown (-48.40% vs Baseline -50.68%).
 
-
+.
+.
 ![MARS Backtest Performance Matrix](mars_performance_matrix.png)
-
-
-
+.
+.
+.
 
 
 ## Setup & Usage
