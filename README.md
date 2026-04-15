@@ -94,6 +94,9 @@ Utility to verify the internal structure and metadata of the Golden Model.
     *   **Sharpe Ratio:** 1.08 (vs Nifty 0.76)
     *   **Conclusion:** The strategy has become significantly more robust in the post-2020 regime.
 
+![MARS Backtest Performance Matrix](mars_performance_matrix.png)
+
+
 ## Setup & Usage
 
 ### Dependencies
@@ -114,3 +117,4 @@ This will output `market_tensor_processed.csv`.
 *   **Style:** Pythonic, using Pandas for vectorization.
 *   **Safety:** Explicit handling of look-ahead bias (lagging features) and data splicing is critical.
 *   **Testing:** Data integrity checks (e.g., liquidity checks) are embedded in the pipeline.
+
