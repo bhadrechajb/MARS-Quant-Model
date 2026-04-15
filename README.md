@@ -95,6 +95,17 @@ Standardized script for generating regime predictions.
 .
 .
 
+* **Performance (Post-Covid: 2020-2026):**
+    * **Total Return:** 185.92% (vs Nifty 97.29%) - Outperformance: +88.63%
+    * **Sharpe Ratio:** 0.99 (vs Nifty 0.68)
+    * **Max Drawdown:** -36.06% (vs Nifty -38.44%)
+    * **Conclusion:** The strategy maintains strong risk-adjusted outperformance and strictly lower drawdowns in the post-2020 macro regime.
+
+![MARS 2020 Backtest Matrix](mars_performance_matrix_2020.png)
+.
+.
+.
+
 
 ## Setup & Usage
 
